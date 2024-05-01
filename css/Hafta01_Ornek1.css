@@ -1,0 +1,102 @@
+body {
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20220111/pngtree-gradient-background-jpg-blue-image_982140.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Exo 2';
+    font-weight: bolder;
+}
+
+.ust-kisim img {
+    width: 250px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    background: #eaeaea;
+}
+
+ul li {
+    list-style-type: none;
+    float: left;
+    margin-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.ust-kisim {
+    width: 100%;
+    border: 1px dashed aqua;
+}
+
+.ust-kisim ul li:hover {
+    background-color: #f8f8f8;
+}
+
+.ust-kisim ul li a:visited {
+    /*ziyaret edilen linkler*/
+    color: #f00;
+}
+
+.ust-kisim ul li a:active {
+    /*klik anındaki olay*/
+    color: #ff0;
+}
+
+table {
+    border: 1px solid #000;
+}
+
+table tbody tr td,
+table thead tr th {
+    border: 1px solid #000;
+}
+
+p.yaziBuyuklugu {
+    font-size: 14px;
+}
+
+p.yaziRengi {
+    color: aqua;
+}
+
+p.arkaplan {
+    background: red;
+}
+
+.mesaj {
+    margin: auto auto;
+    border: 5px solid #f00;
+    font-style: italic;
+    text-indent: 100px;
+    /*Paragraf başı boşluğu*/
+    letter-spacing: 5px;
+    text-align: justify;
+}
+
+.soyad{
+    display: inline;
+}
+
+.btn-gonder{
+    background: #00adca;
+    color:#fff;
+    border:2px solid #20d3f3;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.btn-gonder:hover{
+    background: #20d3f3;
+    border:2px solid #00adca;
+}
