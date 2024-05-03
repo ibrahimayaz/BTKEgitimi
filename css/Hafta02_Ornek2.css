@@ -1,0 +1,45 @@
+body{
+    margin:0;
+    padding: 0;
+}
+#ust-menu ul{
+    margin:0;
+    list-style-type: none;
+    margin-left: -40px;
+    height: 40px;
+    line-height: 40px;
+}
+#ust-menu ul li{
+    float: left;
+    margin-right:10px;
+}
+#ust-menu ul li:hover ul{
+    display: block;
+}
+#ust-menu ul li a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+}
+#ust-menu ul li ul{
+    display: none;
+    margin:0;
+    padding:0;
+    float: left;
+    width: 100%;
+}
+#ust-menu ul li ul li{
+    float: none;
+    background: red;
+    margin:0;
+    transition: background 3s;
+
+}
+
+#ust-menu ul li ul li:hover{
+    background: purple;
+}
+#ust-menu{
+    background: #eaeaea;
+    height: 50px;
+}

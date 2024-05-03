@@ -14,7 +14,7 @@ ul li{
     width: auto;
     line-height: 40px;
     height: 40px;
-    background: blue;
+    background: linear-gradient(to left, red, yellow);
     box-shadow: 3px 3px 3px #000;
     margin-right: 5px;
     padding: 0px 5px;
@@ -39,6 +39,15 @@ ul li:hover{
     background-size: 20px 20px;
     background-position: top left;
 }
+
+/**
+[ozellik="deger"]>> .... değerine eşit
+[ozellik^="deger"]>> .... ile başlayan
+[ozellik$="deger"]>> .... ile biten
+[ozellik*="deger"]>> .... değeri içeren
+[ozellik]>> .... özelliğini kullanan
+
+**/
 .dosya-listesi a[href$="docx"]{ 
     background-image: url("../img/word.png");
 }
@@ -47,4 +56,75 @@ ul li:hover{
 }
 .dosya-listesi a[href$="xlsx"]{
     background-image: url("../img/excel.png");
+}
+
+body{
+    background-image: url("../img/bg2.png");
+    background-repeat: repeat;
+}
+
+.personel-listesi{
+    border:1px solid #000;
+}
+
+.personel-listesi tr, .personel-listesi td, .personel-listesi th{
+    border:1px solid #000;
+}
+.personel-listesi tr:first-child, .personel-listesi tr:last-child{
+    background: red;
+    color: #fff;
+}
+
+.personel-listesi tr:nth-child(even){
+    background: yellow;
+    color: #000;
+}
+.personel-listesi tr:nth-child(odd){
+    background: yellowgreen;
+    color: #000;
+}
+.personel-listesi tr:first-child{
+    background: red;
+    color: #fff;
+}
+.personel-listesi tr:nth-child(7n){
+    background: plum;
+    color: #000;
+}
+
+.calisan-listesi{
+    border:1px solid #000;
+}
+
+.calisan-listesi tr, .calisan-listesi td, .calisan-listesi th{
+    border:1px solid #000;
+}
+.calisan-listesi tr td:nth-child(2n+1), .calisan-listesi tr th:nth-child(2n+1){
+    background: red;
+    color: #fff;
+}
+
+
+@media screen and (max-width:500px) {
+    body{
+        background-image: url('../img/bg.avif');
+    }
+    .calisan-listesi tr td:nth-child(2n+1), .calisan-listesi tr th:nth-child(2n+1){
+        background: yellow;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width:501px) and (max-width:750px) {
+    .calisan-listesi tr td:nth-child(2n+1), .calisan-listesi tr th:nth-child(2n+1){
+        background: green;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width:751px) and (max-width:1000px) {
+    .calisan-listesi tr td:nth-child(2n+1), .calisan-listesi tr th:nth-child(2n+1){
+        background: purple;
+        color: #fff;
+    }
 }
