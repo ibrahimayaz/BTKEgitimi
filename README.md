@@ -1,2 +1,3 @@
-BTK Akademi <br>
-FRONT-END WEB ATÖLYESİ ETKİNLİĞİ
+BTK AKADEMİ <br>
+FRONT-END WEB DİZAYN KURSU
+Ders İçerikleri
