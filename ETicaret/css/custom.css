@@ -1,0 +1,18 @@
+#ust-kisim{
+    height: 41px;
+    line-height: 41px;
+    color: #fff;
+}
+
+.navbar .nav-link{
+    color: #000;
+}
+
+.carousel-caption{
+    right:50%;
+    bottom: 15%;
+}
+.carousel-caption h5{
+    font-size: 3em;
+    font-family: "Dancing Script", cursive;
+}
