@@ -93,22 +93,26 @@
 #hizmetler
 {
     background-image: url("../img/bg-image.webp");
-    background-size: 100% auto;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
     padding-top:50px;
     min-height: 500px;
     
    
 }
-
+#hizmetler{
+    padding-bottom: 100px;
+}
 #hizmetler .box
 {
+    position: relative;
+    z-index: 3;
     padding:25px 5px;
     background-color: #fff;
     width: 70%;
     border-radius: 20px;
     text-align: center;
     margin: 0 auto;
-    z-index: 2;
 }
 #hizmetler .box span{
 display: block;
@@ -121,7 +125,7 @@ font-weight: bold;
 #hizmetler .cizgi{
     position: relative;
     height: 100px;
-    z-index: 1;
+    z-index: 0;
 }
 #hizmetler .cizgi::before{
     position: absolute;
@@ -134,4 +138,5 @@ font-weight: bold;
     background-position: center center;
     height: 100%;
     filter: invert(1);
+    display: block;
 }
