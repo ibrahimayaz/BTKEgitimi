@@ -144,7 +144,7 @@ font-weight: bold;
 
 #sepet, #top{
     position:fixed;
-    bottom: 55px;
+    bottom: 65px;
     right:5px;
     font-size: 1.5em;
     width: 50px;
@@ -153,5 +153,30 @@ font-weight: bold;
     border-radius: 50%;
 }
 #top{
-    bottom:0;
+    bottom:10px;
+    display: none;
+
+}
+.alt-urun{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+.alt-urun .alt-urun-img{
+    overflow: hidden;
+    max-height: 237px;
+    border-radius: 5px;
+}
+.alt-urun img{
+    transform: scale(1);
+    width: 100%;
+    margin-bottom: 20px;
+    transition: .3s ease;
+}
+.alt-urun-img:hover img{
+    transform: scale(1.1);
+
+}
+.alt-urun span{
+    font-weight: bold;
 }
